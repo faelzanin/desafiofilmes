@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarouselCollectionViewCell_XIB" id="gTV-IL-0wX" customClass="CarouselCollectionViewCell" customModule="Desafio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="600"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="600"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Lf-Vz-SwB">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="600"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9I-ii-3sW" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="100" width="350" height="400"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="e9k-iB-9uS"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="gTV-IL-0wX" id="gVH-DS-5Ii"/>
+                                    <outlet property="delegate" destination="gTV-IL-0wX" id="1M3-U7-DWF"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITANIC (2009)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxx-4X-AEM">
+                                <rect key="frame" x="16" y="63" width="318" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="H4v-zY-5DF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t9I-ii-3sW" firstAttribute="leading" secondItem="1Lf-Vz-SwB" secondAttribute="leading" id="5bu-yk-dVh"/>
+                            <constraint firstItem="t9I-ii-3sW" firstAttribute="top" secondItem="jxx-4X-AEM" secondAttribute="bottom" constant="16" id="Vaz-CZ-aL2"/>
+                            <constraint firstAttribute="trailing" secondItem="jxx-4X-AEM" secondAttribute="trailing" constant="16" id="e1u-bv-CNp"/>
+                            <constraint firstItem="t9I-ii-3sW" firstAttribute="centerY" secondItem="1Lf-Vz-SwB" secondAttribute="centerY" id="l04-MV-pA6"/>
+                            <constraint firstItem="jxx-4X-AEM" firstAttribute="leading" secondItem="1Lf-Vz-SwB" secondAttribute="leading" constant="16" id="q3b-FO-AQy"/>
+                            <constraint firstAttribute="trailing" secondItem="t9I-ii-3sW" secondAttribute="trailing" id="qQR-Ud-aiW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1Lf-Vz-SwB" secondAttribute="trailing" id="7Nr-dI-N1Z"/>
+                <constraint firstAttribute="bottom" secondItem="1Lf-Vz-SwB" secondAttribute="bottom" id="GPC-Hu-npK"/>
+                <constraint firstItem="1Lf-Vz-SwB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bVn-Tg-gI3"/>
+                <constraint firstItem="1Lf-Vz-SwB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lfz-vH-9nW"/>
+            </constraints>
+            <connections>
+                <outlet property="iCarousel" destination="t9I-ii-3sW" id="pDr-vd-Edi"/>
+                <outlet property="titleLabel" destination="jxx-4X-AEM" id="pPL-mN-tFC"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="-6"/>
+        </collectionViewCell>
+    </objects>
+</document>

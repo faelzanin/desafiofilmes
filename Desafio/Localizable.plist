@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AlertErrorFilmNotFound</key>
+	<dict>
+		<key>value</key>
+		<string>Filme não encontrado</string>
+		<key>comment</key>
+		<string>Mensagem para quando o filme buscado não for encontrado</string>
+	</dict>
+	<key>AlertInfoFilmRemoved</key>
+	<dict>
+		<key>value</key>
+		<string>Filme removido com sucesso!</string>
+		<key>comment</key>
+		<string>Mensagem para informar o usuário que o filme foi removido com sucesso.</string>
+	</dict>
+	<key>AlertInfoFilmAdded</key>
+	<dict>
+		<key>value</key>
+		<string>Filme adicionado com sucesso!</string>
+		<key>comment</key>
+		<string>Mensagem para informar o usuário que o filme foi adicionado com sucesso.</string>
+	</dict>
+	<key>AlertInfoTitle</key>
+	<dict>
+		<key>comment</key>
+		<string>Titulo do alerta de Informação</string>
+		<key>value</key>
+		<string>Woop!</string>
+	</dict>
+	<key>AlertErrorTitle</key>
+	<dict>
+		<key>value</key>
+		<string>Atenção</string>
+		<key>comment</key>
+		<string>Titulo do alerta de erro</string>
+	</dict>
+	<key>AlertErrorDefault</key>
+	<dict>
+		<key>value</key>
+		<string>Algo deu errado. Tente novamente mais tarde!</string>
+		<key>comment</key>
+		<string>Mensagem padrão para quando deu erro na requisição do serviço, como por exemplo erro 404, 500, etc.</string>
+	</dict>
+</dict>
+</plist>
